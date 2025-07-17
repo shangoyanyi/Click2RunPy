@@ -30,7 +30,7 @@
 
 ### 修改安裝路徑（必要步驟）
 
-請 **務必打開 `.reg` 檔案**，將裡面的 Python 執行路徑修改為你自己的安裝位置：
+請 **務必打開 `.reg` 檔案**，將裡面的 Python 執行路徑(下面這行)修改為你自己的安裝位置：
 
 ```reg
 @="\"C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"%1\""
