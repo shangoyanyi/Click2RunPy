@@ -21,8 +21,8 @@
 
 | 檔案名稱 | 功能說明 |
 |----------|----------|
-| `Click2RunPy_EnableContextMenu.reg` | ✅ 加入右鍵選單「用 Python 執行」 |
-| `Click2RunPy_DisableContextMenu.reg` | ❌ 移除上述右鍵選單 |
+| `install_Click2RunPy.reg` | ✅ 加入右鍵選單「用 Python 執行」 |
+| `uninstall_Click2RunPy.reg` | ❌ 移除上述右鍵選單 |
 
 ---
 
@@ -33,7 +33,7 @@
 請 **務必打開 `.reg` 檔案**，將裡面的 Python 執行路徑(下面這行)修改為你自己的安裝位置：
 
 ```reg
-@="\"C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"%1\""
+@="\"C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" \"%1\""
 ```
 
 你可以透過終端機輸入以下指令查詢：
@@ -42,7 +42,7 @@ where python
 ```
 
 ### 2️⃣ 匯入註冊表
-雙擊 Click2RunPy_EnableContextMenu.reg
+雙擊 install_Click2RunPy.reg
 → 點選「是」匯入 → 即可啟用功能。
 
 ### 3️⃣ 測試執行
@@ -50,7 +50,7 @@ where python
 
 
 ### 若要移除
-只要雙擊 Click2RunPy_DisableContextMenu.reg，即可完全清除註冊。
+只要雙擊 uninstall_Click2RunPy.reg，即可完全清除註冊。
 
 ### 小提醒
 - 此工具僅支援 Windows 系統
